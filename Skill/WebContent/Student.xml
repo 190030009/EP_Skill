@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="Student.xsl"?>
 <students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="Student.xsd">
+  xsi:noNamespaceSchemaLocation="Student.xsd">
     <student id="30001">
       <no>01</no>
       <name>A</name>
@@ -37,4 +37,4 @@
       <marks>88</marks>
       <class>10</class>
   </student>
-</students>
+  </students>
