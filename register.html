@@ -1,0 +1,53 @@
+<html>
+<head>
+<script>
+function register()
+{
+var user=document.f1.user.value;
+var password=document.f1.password.value;
+var email=document.f1.email.value;
+var fb=document.getElementById("check");
+if(user==null||user=="")
+{
+alert("Enter the username");
+}
+if(password==null||password=="")
+{
+alert("Enter the password");
+}
+if(password.length<8)
+{
+alert("password should be of 8 characters")
+}
+if(user.length<8)
+{
+alert("username should be of 8 characters")
+}
+if(fb==""||fb==null)
+{
+alert("Select atleast one favourite game");
+}
+var at = parseInt(email.indexOf('@'));
+var dot = parseInt(email.lastIndexOf('.'));
+if(at==-1 || dot==-1)
+alert("Enter valid email");
+else if(dot > at && email[dot+2]!=null)
+alert("Welcome");
+else
+alert("invalid email");
+}
+</script>
+</head>
+<body>
+<form name="f1" onsubmit="register()">
+Username:<input type="text" name="user"><br>
+Email:<input type="text" name="email"><br>
+Password:<input type="password" name="password"><br>
+Favourite game:<input type="checkbox" name="fb">Football
+                         <input type="checkbox" name="fb">Cricket
+                         <input type="checkbox" name="fb">Tennis
+                         <input type="checkbox" name="fb">Chess<br>
+<input type="submit" value="register">
+</form>
+</body>
+</html>
