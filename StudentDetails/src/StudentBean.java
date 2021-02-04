@@ -14,6 +14,4 @@ public class StudentBean {
 		this.name = name;
 	}
 	private String name;
-	
-
 }

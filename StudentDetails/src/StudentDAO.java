@@ -12,5 +12,4 @@ public class StudentDAO {
 		int i=ps.executeUpdate();
 		return i;
 	}
-
 }

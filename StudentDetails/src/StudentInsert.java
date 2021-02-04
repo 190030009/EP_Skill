@@ -50,5 +50,4 @@ public class StudentInsert extends HttpServlet {
 		e.printStackTrace();
 	}
 	}
-
 }
